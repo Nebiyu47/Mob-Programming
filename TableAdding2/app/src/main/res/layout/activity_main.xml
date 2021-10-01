@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:padding="20dp"
+        android:textSize="30dp"
+        android:hint="Enter Android Version"/>
+       <EditText
+           android:id="@+id/ed2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:inputType="text"
+           android:padding="20dp"
+           android:ems="10"
+           android:hint="Enter Android Code Name"
+           android:textSize="30dp"/>
+       <Button
+           android:id="@+id/bt1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:layout_marginTop="20dp"
+           android:text="Add"
+           android:textSize="30dp"/>
+       <TableLayout
+           android:id="@+id/tl"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+                android:background="@color/teal_200"
+               android:layout_marginBottom="2dp">
+           <TextView
+               android:id="@+id/tv3"
+               android:layout_width="200dp"
+               android:layout_height="wrap_content"
+               android:text="Version"
+               android:textAlignment="center"
+
+               android:textSize="20dp"/>
+           <TextView
+               android:id="@+id/tv2"
+               android:layout_width="211dp"
+               android:layout_height="wrap_content"
+               android:text="Code Name"
+               android:textAlignment="center"
+               android:textSize="20dp"/>
+           </TableRow>
+           <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+               android:background="@color/teal_200"
+               android:layout_marginBottom="2dp">
+               <TextView
+                   android:id="@+id/tv5"
+                   android:layout_width="211dp"
+                   android:layout_height="wrap_content"
+                   android:text="Android 9.0"
+                   android:textAlignment="center"
+                   android:textSize="20dp"/>
+               <TextView
+                   android:id="@+id/tv6"
+                   android:layout_width="211dp"
+                   android:layout_height="wrap_content"
+                   android:text="pie"
+                   android:textAlignment="center"
+                   android:textSize="20dp"/>
+
+
+
+           </TableRow>
+       </TableLayout>
+    </LinearLayout>
+</RelativeLayout>
