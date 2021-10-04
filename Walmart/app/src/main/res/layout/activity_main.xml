@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/activity_main"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="16dp"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp">
+    tools:context=".MainActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
     <ImageView
         android:id="@+id/img"
         android:layout_width="wrap_content"
         android:layout_height="70dp"
         android:src="@drawable/download"/>
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/img"/>
+
 
     <TextView
         android:id="@+id/tv1"
@@ -68,13 +72,15 @@
         android:background="@drawable/coustome_new"
         android:layout_centerHorizontal="true"/>
 
- <TextView
+ <Button
      android:id="@+id/tv4"
      android:layout_marginTop="10dp"
      android:text="Forgot Password?"
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
-     android:layout_alignRight="@+id/ed2"
+     android:gravity="right"
+     android:layout_marginRight="8dp"
+     android:onClick="onSendMessageImplicit"
      android:layout_below="@+id/ed2"/>
 
 
@@ -87,6 +93,7 @@
         android:background="@android:color/holo_blue_dark"
         android:layout_below="@+id/tv4"
         android:layout_marginTop="70dp"/>
+
     <TextView
         android:id="@+id/tv5"
         android:text="Don't have an account?"
@@ -107,5 +114,8 @@
        android:textColor="@android:color/holo_blue_dark"
        android:layout_below="@+id/tv5"/>
 
+    </LinearLayout>
+</ScrollView>
 
-</RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

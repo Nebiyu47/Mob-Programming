@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+    <TextView
+        android:id="@+id/t1"
+        android:text="Shop by Categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+    <ImageView
+        android:id="@+id/i1"
+        android:layout_marginTop="40dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/download3"/>
+    <ImageView
+        android:id="@+id/i2"
+        android:layout_marginTop="40dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/download4"
+        android:layout_alignRight="@+id/t1"
+        />
+    <ImageView
+        android:id="@+id/i3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/i1"
+        android:src="@drawable/download5"
+        android:layout_below="@+id/i1"
+        android:layout_marginTop="40dp"/>
+
+    <ImageView
+        android:id="@+id/i7"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/i2"
+        android:layout_alignRight="@+id/i2"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/downlaod6" />
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/i3"
+        android:src="@drawable/download7"
+        android:layout_below="@+id/i3"
+        android:layout_marginTop="40dp"/>
+    <ImageView
+        android:id="@+id/t6"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/i7"
+        android:src="@drawable/download4"
+        android:layout_below="@+id/i3"
+        android:layout_marginTop="40dp"/>
+
+
+</RelativeLayout>
