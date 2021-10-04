@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
             if(intent.resolveActivity(packageManager)!=null){
                 startActivity(intent)
             }else{
-                Toast.makeText(this,"Required Email ",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Required Email To recive your password ",Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -79,9 +79,9 @@ class MainActivity : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, intent);
         if (requestCode == 1) {
             if (resultCode == Activity.RESULT_OK) {
-                val user = data?.getSerializableExtra("user") as User
-                userArrayList.add(user)
-                Toast.makeText(this, "Account created successfully", Toast.LENGTH_LONG).show()
+                val use = data?.getSerializableExtra("user") as User
+                userArrayList.add(use)
+                Toast.makeText(this, "Creating Account", Toast.LENGTH_LONG).show()
 
             }
         }
