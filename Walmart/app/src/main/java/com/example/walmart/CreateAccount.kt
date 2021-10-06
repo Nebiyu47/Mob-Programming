@@ -9,17 +9,17 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_createaccount.*
 
 
-class Registration : AppCompatActivity() {
+class CreateAccount : AppCompatActivity() {
 
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_createaccount)
-        actionListenerCreateAccountBtn()
+        CreateAccountnew()
     }
 
-    fun actionListenerCreateAccountBtn() {
+    fun CreateAccountnew() {
         val btn = findViewById<Button>(R.id.createAccountBtn)
         btn.setOnClickListener {
                 val firstName = firstNameEditTxt.text.toString()
@@ -43,9 +43,3 @@ class Registration : AppCompatActivity() {
 
 }
 
-/*  //---set the data to pass back
-            data.data = Uri.parse(text) // set intent as a Uri type
-            setResult(Activity.RESULT_OK, data)
-            //---close the activity---
-            finish()
-             */

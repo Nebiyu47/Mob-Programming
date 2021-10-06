@@ -19,7 +19,7 @@ class walmartlogin : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_walmart)
 
-        //call action methods
+
         Users()
         LoginBtn()
         actionListenerCreateAccountBtn()
@@ -56,7 +56,7 @@ class walmartlogin : AppCompatActivity() {
     fun actionListenerCreateAccountBtn() {
         val createAcctountBtn = findViewById<Button>(R.id.createAccountBtn)
         createAcctountBtn.setOnClickListener {
-            val intent = Intent(this@walmartlogin,Registration::class.java)
+            val intent = Intent(this@walmartlogin,CreateAccount::class.java)
             startActivityForResult(intent, 1)
         }
     }
@@ -79,7 +79,7 @@ class walmartlogin : AppCompatActivity() {
         }
     }
 
-    //implicit intent for composing email
+
     fun Email(address: String, subject: String) {
         val intent = Intent(Intent.ACTION_SENDTO).apply {
             data = Uri.parse("mailto:") // only email apps should handle this
@@ -91,7 +91,6 @@ class walmartlogin : AppCompatActivity() {
         }
     }
 
-    //receive the data from Registration Activity
     public override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, intent);
         if (requestCode == 1) {

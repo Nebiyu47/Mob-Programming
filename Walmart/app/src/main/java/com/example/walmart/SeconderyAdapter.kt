@@ -22,11 +22,6 @@ class ElectronicAdapter(var item: ArrayList<Product>, var clickListener: OnProdu
     }
 
     override fun onBindViewHolder(holder: ElectronicViewHolder, position: Int) {
-        /*
-        holder.productTitle?.text = item.get(position).title
-        holder.productPrice?.text = item.get(position).price.toString()
-        holder.productColor?.text = item.get(position).color
-        holder.productImage.setImageResource(item.get(position).image) */
         holder.intialize(item.get(position), clickListener)
 
     }

@@ -15,9 +15,9 @@ class AppleLaptopActivity : AppCompatActivity() , OnProductClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_laptop)
-
-        productlist = ArrayList()
         addingNewProductofAppleLaptop()
+        productlist = ArrayList()
+
         rv_electronic.layoutManager = LinearLayoutManager(this)
         rv_electronic.addItemDecoration(DividerItemDecoration(this,1))
         rv_electronic.adapter = ElectronicAdapter(productlist, this)
@@ -33,7 +33,7 @@ class AppleLaptopActivity : AppCompatActivity() , OnProductClickListener {
 
     override fun onItemClick(item: Product, position: Int) {
 
-        var intent = Intent(this, MacBookDetailActivity::class.java)
+        var intent = Intent(this, LapBookActivity::class.java)
         intent.putExtra("Product_Title", item.name)
         intent.putExtra("Product_Description", item.description)
         intent.putExtra("Product_Color", item.color)
