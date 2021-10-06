@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/QuizApptitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quiz"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="6dp"
+            android:fontFamily="sans-serif"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:id="@+id/questions_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorPrimaryDark"
+            android:layout_margin="8dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/firstQTxtView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Which one of the Android app component helps to share the
+data between different apps?"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="6dp"
+                android:textColor="#ffffff"
+                android:textSize="22dp"
+
+                />
+
+            <RadioGroup
+                android:id="@+id/radioBtnGroubQ1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="6dp">
+
+                <RadioButton
+                    android:id="@+id/Q1A1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="a) Activity"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#2C2920"
+                    />
+
+                <RadioButton
+                    android:id="@+id/Q1A2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Service "
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#2C2920"
+               />
+
+                <RadioButton
+                    android:id="@+id/Q1A3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="oContent Provider"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#2C2920"
+                 />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/secondQTxtView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kotlin Strings are mutable"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="6dp"
+                android:textColor="#ffffff"
+                android:textSize="22dp"
+                android:textStyle="bold"
+               />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioBtnGroubQ2"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp">
+
+                <RadioButton
+                    android:id="@+id/Q2A1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="True"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#2C2920"
+                 />
+
+                <RadioButton
+                    android:id="@+id/Q2A2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="False"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#2C2920"
+          />
+
+
+            </RadioGroup>
+
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/resetBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="RESET"
+                android:fontFamily="serif-monospace"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="22dp"
+                android:backgroundTint="#0000FF"/>
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="RESULT"
+
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:backgroundTint="#85C837"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
