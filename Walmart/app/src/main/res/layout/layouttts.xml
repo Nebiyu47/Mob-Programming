@@ -20,7 +20,7 @@
             android:layout_height="50pt"
             android:scaleType="fitCenter"
             android:layout_margin="3dp"
-            app:srcCompat="@drawable/iwatch" />
+            app:srcCompat="@drawable/aie" />
 
         <TextView
             android:id="@+id/textView"

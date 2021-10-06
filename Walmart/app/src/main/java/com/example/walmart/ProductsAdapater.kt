@@ -14,12 +14,11 @@ class ProductsAdapater: BaseAdapter {
     var productsList = ArrayList<Product>()
     var context : Context? = null
 
-    //give the context and the dataSource to the Adapter constructor
     constructor(context: Context, productList: ArrayList<Product>) : super() {
         this.context = context
         this.productsList = productList
     }
-    //return the cell view to be reusable
+
     override fun getView(index: Int, p1: View?, p2: ViewGroup?): View {
         var product = productsList[index]
         var inflater = context!!.getSystemService(LAYOUT_INFLATER_SERVICE) as LayoutInflater
@@ -43,16 +42,13 @@ class ProductsAdapater: BaseAdapter {
         return p0.toLong()
     }
 
-    //return number of cell itiration
+
     override fun getCount(): Int {
         return productsList.size
     }
-    //make some intents
+
     fun makeSomeIntents(context: Context?,destination : String){
 
-//        val intent = Intent(getActivity(),Shopping::class.java)
-//        intent.putExtra("userName",user.email)
-//        startActivity(intent)
         if (destination.equals("Apple Watch")){
             val intent = Intent(context,AppleIphone::class.java)
             context?.startActivity(intent)
