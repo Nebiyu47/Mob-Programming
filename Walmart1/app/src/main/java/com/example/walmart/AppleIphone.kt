@@ -16,7 +16,7 @@ class AppleIphone : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_apple_phone)
 
-        val adapter = ArrayAdapter(this, R.layout.activity_apple_phone, clothingList)
+        val adapter = ArrayAdapter(this, R.layout.listofapplephone, clothingList)
         val listView: ListView = findViewById(R.id.listview_applewatch)
         listView.adapter  = adapter
 

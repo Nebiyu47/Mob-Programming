@@ -2,7 +2,7 @@ package com.example.walmart
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_shopping.*
+import kotlinx.android.synthetic.main.activity_listofitem.*
 
 
 class Shopping : AppCompatActivity() {
@@ -12,7 +12,7 @@ class Shopping : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_shopping)
+        setContentView(R.layout.activity_listofitem)
         productsList.add(Product("Apple Phone",R.drawable.download5,"Black", 23344.00,""))
         productsList.add(Product("Apple Laptop",R.drawable.download3, "Silver", 2000.00,""))
         productsList.add(Product("cloth",R.drawable.downlaod6,"black",199.00,""))

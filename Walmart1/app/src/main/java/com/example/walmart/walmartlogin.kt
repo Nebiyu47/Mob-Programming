@@ -28,7 +28,7 @@ class walmartlogin : AppCompatActivity() {
 
     fun Users() {
         userArrayList.add(User("Nebiyu", "Desta", "nebiyu@.com", "12"))
-        userArrayList.add(User("Desta", "Nebiyu", "nd@miu.com", "12"))
+        userArrayList.add(User("Desta", "Nebiyu", "n@.com", "12"))
         userArrayList.add(User("john", "mark", "mark@miu.com", "12"))
         userArrayList.add(User("mark", "chirs", "ch@miu.edu", "12"))
         userArrayList.add(User("neba", "binyam", "miu.edu.com", "12"))

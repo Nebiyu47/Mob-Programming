@@ -7,13 +7,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
-import kotlinx.android.synthetic.main.newlayout.view.*
+import kotlinx.android.synthetic.main.layouttts.view.*
 
 
 class ProductsAdapater: BaseAdapter {
     var productsList = ArrayList<Product>()
     var context : Context? = null
-
 
     constructor(context: Context, productList: ArrayList<Product>) : super() {
         this.context = context
@@ -23,10 +22,10 @@ class ProductsAdapater: BaseAdapter {
     override fun getView(index: Int, p1: View?, p2: ViewGroup?): View {
         var product = productsList[index]
         var inflater = context!!.getSystemService(LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        var productView = inflater.inflate(R.layout.newlayout, null)
+        var productView = inflater.inflate(R.layout.layouttts, null)
         productView.imageView.setImageResource(product.image)
         productView.textView.text = product.name
-        if (product.name.equals("Apple Phone") || product.name.equals("Apple Laptop")) {
+        if (product.name.equals("Apple phone") || product.name.equals("Apple Laptop")) {
             productView.imageView.setOnClickListener{
                 makeSomeIntents(context,product.name)
             }
@@ -50,12 +49,11 @@ class ProductsAdapater: BaseAdapter {
 
     fun makeSomeIntents(context: Context?,destination : String){
 
-
-        if (destination.equals("Apple Phone")){
+        if (destination.equals("Apple phone")){
             val intent = Intent(context,AppleIphone::class.java)
             context?.startActivity(intent)
         }else {
-            val intent = Intent(context,Laptopactivity::class.java)
+            val intent = Intent(context,AppleLaptopActivity::class.java)
             context?.startActivity(intent)
         }
     }

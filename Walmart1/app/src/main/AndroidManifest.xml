@@ -9,12 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LaptopActivtyDetails"></activity>
-        <activity android:name=".Laptopactivity" />
+        <activity android:name=".LapBookActivity"></activity>
+        <activity android:name=".AppleLaptopActivity" />
         <activity android:name=".AppleIphone" />
         <activity android:name=".CreateAccount" />
         <activity android:name=".Shopping" />
-        <activity android:name=".walamartLogin">
+        <activity android:name=".walmartlogin">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
